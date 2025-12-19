@@ -9,4 +9,5 @@ gemini = genai.Client()
 models = gemini.models.list()
 
 for i in models:
-    print(i.name)
+    print(i)
+
