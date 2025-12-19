@@ -17,11 +17,11 @@ gemini = genai.Client()
 
 models = gemini.models.list()
 
-# response = gemini.models.generate_content(
-#     model = "gemini-2.5-flash",
-#     contents = "Could you please explain AI")
+response = gemini.models.generate_content(
+    model = "gemini-2.5-flash",
+    contents = "Could you please explain AI")
 
-# print(response.text)
+print(response.text)
 
 print([x for x in dir(gemini) if not x.startswith("_")])
 print([x for x in dir(gemini.models) if not x.startswith("_")])
