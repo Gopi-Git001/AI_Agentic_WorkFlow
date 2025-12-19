@@ -4,7 +4,6 @@ print(load_dotenv())
 
 from google import genai
 
-
 import os   
 
 google_api_key = os.getenv("GEMINI_API_KEY")
@@ -18,20 +17,18 @@ gemini = genai.Client()
 
 models = gemini.models.list()
 
-# for i in models:
-#     print(i.name)    
+# response = gemini.models.generate_content(
+#     model = "gemini-2.5-flash",
+#     contents = "Could you please explain AI")
+
+# print(response.text)
+
+print([x for x in dir(gemini) if not x.startswith("_")])
+print([x for x in dir(gemini.models) if not x.startswith("_")])
 
 
-import os
-from dotenv import load_dotenv, find_dotenv
+# model = genai.GenerativeModel("gemini.2.5.flash")
 
-dotenv_path = find_dotenv()
-print("Found .env at:", dotenv_path)
+# response = model.generate_content("Could you please explain AI")
 
-loaded = load_dotenv(dotenv_path)
-print("load_dotenv returned:", loaded)
-
-print("CWD:", os.getcwd())
-print("GOOGLE_API_KEY value:", repr(os.getenv("GOOGLE_API_KEY")))
-print("All env keys containing 'KEY':", [k for k in os.environ.keys() if "KEY" in k])
-
+# print(response.text)
