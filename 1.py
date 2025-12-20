@@ -18,5 +18,4 @@ while True:
         model="gemini-2.5-flash",
         contents=question
     )
-
     print("Gemini:", response.text, "\n")
