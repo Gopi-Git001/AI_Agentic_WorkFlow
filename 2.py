@@ -4,9 +4,21 @@ import google.generativeai as genai
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+client = genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-response = model.generate_content("Hello Gemini")
-print(response.text)
+while True:
+
+    question = input('You:' )
+
+    if question == 'exit' or question == 'quit':
+        print('Thank you')
+        break
+    else:
+
+    response = client.models.generate_content(
+
+        model="gemini-2.5-flash",
+        contents=question
+    )
