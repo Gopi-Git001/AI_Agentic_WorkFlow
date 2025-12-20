@@ -13,7 +13,6 @@ while True:
     if question.lower() in {"exit", "quit"}:
         print("Goodbye!")
         break
-
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=question
