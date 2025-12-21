@@ -8,8 +8,7 @@ client = genai.Client()
 print("Gemini CLI (type 'exit' to quit)\n")
 
 while True:
-    question = input("You: ").strip()
-    
+    question = input("You: ").strip()    
     if question.lower() in {"exit", "quit"}:
         print("Goodbye!")
         break
