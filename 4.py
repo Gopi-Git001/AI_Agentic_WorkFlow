@@ -1,10 +1,4 @@
-from google import genai
 
-client = genai.Client(api_key="AIzaSyD62MBeUJOzrlwkdeYSgANbbZ0G6QBbJ18")
-
-models = client.models.list()
-for m in models:
-    print(m.name)
 
 
 import os
