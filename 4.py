@@ -10,7 +10,6 @@ key = os.getenv("GEMINI_API_KEY")
 print("key loaded:", None if not key else (key[:6] + "..." + key[-4:]))
 print("key length:", 0 if not key else len(key))
 
-
 from dotenv import load_dotenv
 load_dotenv(override=True)
 
