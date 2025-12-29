@@ -1,19 +1,16 @@
+
 from dotenv import load_dotenv
+
 load_dotenv()
 
-from google import genai
+import os
 
-client = genai.Client()
+api_key = os.getenv("OPENAI_API_KEY")
 
-print("Gemini CLI (type 'exit' to quit)\n")
 
-while True:
-    question = input("You: ").strip()    
-    if question.lower() in {"exit", "quit"}:
-        print("Goodbye!")
-        break
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=question
-    )
-    print("Gemini:", response.text, "\n")
+if api_key:
+    print("exist")
+
+else:
+    print("Nothing")
+
