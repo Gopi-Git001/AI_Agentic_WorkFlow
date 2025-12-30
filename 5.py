@@ -9,7 +9,7 @@ from openai import OpenAI
 
 openai = OpenAI()
 
-question_1 = "Pick a buisiness are that might be worth exploring for an Agentic AI opportunity"
+question_1 = "Pick a buisiness area that might be worth exploring for an Agentic AI opportunity"
 
 messages = [{"role":"user","content":question_1}]
 
