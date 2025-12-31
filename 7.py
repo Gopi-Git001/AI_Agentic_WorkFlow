@@ -65,3 +65,8 @@ competitors = []
 answers=[]
 
 messages = [{'role':'user','content':question  }]
+
+response = openai.chat.completions.create(
+    model = model_name,
+    messages = messages
+)
