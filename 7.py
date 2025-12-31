@@ -97,3 +97,4 @@ gemini = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
+model_name = "gemini-2.5-flash"
