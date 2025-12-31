@@ -98,3 +98,4 @@ gemini = OpenAI(
 )
 
 model_name = "gemini-2.5-flash"
+messages = [{'role':'user','content':question  }]
