@@ -48,3 +48,4 @@ request  += "Answer only with the question,no explanation"
 
 messages = [{'role':'user','content':request }]
 
+openai = OpenAI()
