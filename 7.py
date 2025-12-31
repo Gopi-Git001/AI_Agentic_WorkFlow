@@ -55,5 +55,6 @@ response = openai.chat.completions.create(
     messages = messages
 )
 
+question = response.choices[0].message.content 
 
 
