@@ -46,4 +46,4 @@ else:
     
 request = "please come up with a challenging,naunced question that I can ask a number of LLMs to evaluate their intelligence."
 
-
+request  += "Answer only with the question,no explanation"
