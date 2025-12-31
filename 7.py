@@ -90,3 +90,7 @@ answer = response.content[0].text
 print(f"{model_name}: {answer}")
 competitors.append(model_name)
 answers.append(answer)
+
+
+gemini = OpenAI(api_key=Google_api_key,base_url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + Google_api_key )
+
