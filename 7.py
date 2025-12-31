@@ -40,12 +40,11 @@ if Deepseek_api_key:
     print("Deepseek API key is set")
 else:
     print("Deepseek API key is not set")
-    
-    
-    
+       
     
 request = "please come up with a challenging,naunced question that I can ask a number of LLMs to evaluate their intelligence."
 
 request  += "Answer only with the question,no explanation"
 
 messages = [{'role':'user','content':request }]
+
