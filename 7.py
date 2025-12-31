@@ -58,3 +58,6 @@ response = openai.chat.completions.create(
 question = response.choices[0].message.content 
 
 print(f"OpenAI: {question}")
+
+model_name = "gpt-4o-mini"
+
