@@ -77,6 +77,7 @@ print(f"{model_name}: {answer}")
 competitors.append(model_name)
 answers.append(answer)
 
+claude = Anthropic()
 
 model_name = "claude-3-5-sonnet-20241022"
 messages = [{'role':'user','content':question  }]
