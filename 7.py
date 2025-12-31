@@ -63,3 +63,5 @@ model_name = "gpt-4o-mini"
 
 competitors = []
 answers=[]
+
+messages = [{'role':'user','content':question  }]
