@@ -62,3 +62,4 @@ print(f"OpenAI: {question}")
 model_name = "gpt-4o-mini"
 
 competitors = []
+answers=[]
