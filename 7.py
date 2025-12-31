@@ -88,3 +88,4 @@ response = claude.messages.create(
 
 answer = response.content[0].text
 print(f"{model_name}: {answer}")
+competitors.append(model_name)
