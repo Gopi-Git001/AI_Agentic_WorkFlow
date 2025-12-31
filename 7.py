@@ -81,3 +81,7 @@ claude = Anthropic()
 
 model_name = "claude-3-5-sonnet-20241022"
 messages = [{'role':'user','content':question  }]
+
+response = claude.messages.create(
+    model = model_name,messages = messages,max_tokens = 1000
+)
