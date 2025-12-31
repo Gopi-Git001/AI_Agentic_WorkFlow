@@ -85,3 +85,5 @@ messages = [{'role':'user','content':question  }]
 response = claude.messages.create(
     model = model_name,messages = messages,max_tokens = 1000
 )
+
+answer = response.content[0].text
