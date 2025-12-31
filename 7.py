@@ -112,3 +112,4 @@ answers.append(answer)
 
 groq = Groq(api_key=Groq_api_key,base_url="https://api.groq.com/v1")
 model_name = "llama-3.1-8b-instant"
+messages = [{'role':'user','content':question  }]
