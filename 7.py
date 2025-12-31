@@ -99,3 +99,8 @@ gemini = OpenAI(
 
 model_name = "gemini-2.5-flash"
 messages = [{'role':'user','content':question  }]
+
+response = gemini.chat.completions.create(
+    model = model_name,
+    messages = messages
+)
