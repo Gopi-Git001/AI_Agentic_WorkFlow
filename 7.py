@@ -120,3 +120,4 @@ response = groq.chat.completions.create(
 
 answer = response.choices[0].message.content
 competitors.append(model_name)
+answers.append(answer)
