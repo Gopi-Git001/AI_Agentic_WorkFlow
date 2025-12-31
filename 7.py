@@ -117,3 +117,5 @@ response = groq.chat.completions.create(
     model = model_name,
     messages = messages
 )
+
+answer = response.choices[0].message.content
