@@ -4,6 +4,10 @@ load_dotenv()
 
 from openai import OpenAI
 from anthropic import Anthropic
+from google import genai
+from groq import Groq
+from deepseek import Deepseek
+
 
 OpenAI_api_key = os.getenv("OPENAI_API_KEY")
 Anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
