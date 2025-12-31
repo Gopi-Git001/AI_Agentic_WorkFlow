@@ -125,3 +125,11 @@ answers.append(answer)
 deepseek = OpenAI(api_key=Deepseek_api_key,base_url="https://api.deepseek.com/v1")
 model_name = "deepseek-chat"
 messages = [{'role':'user','content':question  }]
+response = deepseek.chat.completions.create(
+    model = model_name,
+    messages = messages
+)
+
+answer = response.choices[0].message.content
+competitors.append(model_name)
+answers.append(answer)
