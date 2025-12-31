@@ -49,3 +49,11 @@ request  += "Answer only with the question,no explanation"
 messages = [{'role':'user','content':request }]
 
 openai = OpenAI()
+
+response = openai.chat.completions.create(
+    model = "gpt-4o-mini",
+    messages = messages
+)
+
+
+
