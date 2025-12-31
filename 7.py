@@ -106,3 +106,4 @@ response = gemini.chat.completions.create(
 )
 
 answer = response.choices[0].message.content 
+print(f"{model_name}: {answer}")
