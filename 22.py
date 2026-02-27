@@ -12,7 +12,6 @@ if api_key :
 else:
     print("API NOT FOUND")
 
-
 headers = {'Authorization':f"Bearer {api_key}",'content_type':"application/json"}
 
 payload = {
