@@ -7,7 +7,6 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 client  = OpenAI()
 
-
 if api_key :
     print("API KEY FOUND")    
 else:
