@@ -66,10 +66,6 @@ Return STRICT JSON ONLY (no extra text), exactly:
 }
 """
 
-
-
-
-
 def user_link_prompt(url):
     user_prompt =f"""
 Here is a list of links found on the website: {url}
